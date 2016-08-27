@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Project 1</title>
+		<script src="scripts/main.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/project1.css">
+	</head>
+	<body>
+		<div id="input">
+			<input type="file" id="files" name="files[]" accept=".tsp" multiple />
+			<button id ="runButton" onclick='main(document.getElementById("files"))' >Calculate</button>
+		</div>
+		<div id="input2">
+			first name:<input type="text" name="firstname" onkeyup="formChanged()" onchange="formChanged()"/></br>
+			last name:<input type="text" name="lastname" onkeyup="formChanged()" onchange="formChanged()"/></br>
+		</div>
+		<div id="results">
+			<table id="resultTable" >
+				<tr>
+					<th>Number of Cities</th>
+					<th>Path</th>
+					<th>Distance</th>
+					<th>Time</th>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
