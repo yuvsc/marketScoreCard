@@ -1,34 +1,38 @@
 function main(){
-    gross_profit = document.getElementsByName("gross_profit")[0].value;
-    total_expenses = document.getElementsByName("total_expenses")[0].value;
-	new_offices = document.getElementsByName("new_offices")[0].value;
-	RnD_invesment = document.getElementsByName("RnD_invesment")[0].value;
-	RnD_licenses = document.getElementsByName("RnD_licenses")[0].value;
-	depreciation = document.getElementsByName("depreciation")[0].value;
-	shares_issued = document.getElementsByName("shares_issued")[0].value;
-	market_share_s1 = document.getElementsByName("market_share_s1")[0].value;
-	market_share_s2 = document.getElementsByName("market_share_s2")[0].value;
-	net_demand = document.getElementsByName("net_demand")[0].value;
-	stock_outs = document.getElementsByName("stock_outs")[0].value;
-	brand_s1 = document.getElementsByName("brand_s1")[0].value;
-	brand_s2 = document.getElementsByName("brand_s2")[0].value;
-	judge_s1 = document.getElementsByName("judge_s1")[0].value;
-	judge_s2 = document.getElementsByName("judge_s2")[0].value;
-	cum_new_offices = document.getElementsByName("cum_new_offices")[0].value;
-	cum_RnD_invesment = document.getElementsByName("cum_RnD_invesment")[0].value;
-	cum_RnD_licenses = document.getElementsByName("cum_RnD_licenses")[0].value;
-	cum_depreciation = document.getElementsByName("cum_depreciation")[0].value;
-	cum_net_revenues = document.getElementsByName("cum_net_revenues")[0].value;
-	retained_earnings = document.getElementsByName("retained_earnings")[0].value;
-	common_stock = document.getElementsByName("common_stock")[0].value;
-	sales_productivity = document.getElementsByName("sales_productivity")[0].value;
-	factory_productivity = document.getElementsByName("factory_productivity")[0].value;
-	net_revenues = document.getElementsByName("net_revenues")[0].value;
-	total_assets = document.getElementsByName("total_assets")[0].value;
-	end_inv = document.getElementsByName("end_inv")[0].value;
-	production = document.getElementsByName("production")[0].value;
+    gross_profit = numberWithCommas(document.getElementsByName("gross_profit")[0].value);
+    total_expenses = numberWithCommas(document.getElementsByName("total_expenses")[0].value);
+	new_offices = numberWithCommas(document.getElementsByName("new_offices")[0].value);
+	RnD_invesment = numberWithCommas(document.getElementsByName("RnD_invesment")[0].value);
+	RnD_licenses = numberWithCommas(document.getElementsByName("RnD_licenses")[0].value);
+	depreciation = numberWithCommas(document.getElementsByName("depreciation")[0].value);
+	shares_issued = numberWithCommas(document.getElementsByName("shares_issued")[0].value);
+	market_share_s1 = numberWithCommas(document.getElementsByName("market_share_s1")[0].value);
+	market_share_s2 = numberWithCommas(document.getElementsByName("market_share_s2")[0].value);
+	net_demand = numberWithCommas(document.getElementsByName("net_demand")[0].value);
+	stock_outs = numberWithCommas(document.getElementsByName("stock_outs")[0].value);
+	brand_s1 = numberWithCommas(document.getElementsByName("brand_s1")[0].value);
+	brand_s2 = numberWithCommas(document.getElementsByName("brand_s2")[0].value);
+	judge_s1 = numberWithCommas(document.getElementsByName("judge_s1")[0].value);
+	judge_s2 = numberWithCommas(document.getElementsByName("judge_s2")[0].value);
+	cum_new_offices = numberWithCommas(document.getElementsByName("cum_new_offices")[0].value);
+	cum_RnD_invesment = numberWithCommas(document.getElementsByName("cum_RnD_invesment")[0].value);
+	cum_RnD_licenses = numberWithCommas(document.getElementsByName("cum_RnD_licenses")[0].value);
+	cum_depreciation = numberWithCommas(document.getElementsByName("cum_depreciation")[0].value);
+	cum_net_revenues = numberWithCommas(document.getElementsByName("cum_net_revenues")[0].value);
+	retained_earnings = numberWithCommas(document.getElementsByName("retained_earnings")[0].value);
+	common_stock = numberWithCommas(document.getElementsByName("common_stock")[0].value);
+	sales_productivity = numberWithCommas(document.getElementsByName("sales_productivity")[0].value);
+	factory_productivity = numberWithCommas(document.getElementsByName("factory_productivity")[0].value);
+	net_revenues = numberWithCommas(document.getElementsByName("net_revenues")[0].value);
+	total_assets = numberWithCommas(document.getElementsByName("total_assets")[0].value);
+	end_inv = numberWithCommas(document.getElementsByName("end_inv")[0].value);
+	production = numberWithCommas(document.getElementsByName("production")[0].value);
 	
 	displayResults();
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function displayResults(){
