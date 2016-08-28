@@ -6764,7 +6764,7 @@ button.close {
   margin-right: auto;
   margin-left: auto;
 }
-#calc{
+#calc, #again{
 	margin-bottom: 16px;
 	margin-top: 16px;
 }
