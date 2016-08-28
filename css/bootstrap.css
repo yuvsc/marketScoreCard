@@ -1582,6 +1582,8 @@ pre code {
   overflow-y: scroll;
 }
 .container {
+	text-align: center;
+	background-color: gray;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -6753,5 +6755,15 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.sections{
+	background-color: white;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#calc{
+	margin-bottom: 16px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
