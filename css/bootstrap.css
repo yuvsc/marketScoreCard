@@ -1583,7 +1583,7 @@ pre code {
 }
 .container {
 	text-align: center;
-	background-color: gray;
+	background-color: #d3d3d3;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -1611,6 +1611,7 @@ pre code {
   margin-left: auto;
 }
 .row {
+  padding:5px;
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -6765,5 +6766,6 @@ button.close {
 }
 #calc{
 	margin-bottom: 16px;
+	margin-top: 16px;
 }
 /*# sourceMappingURL=bootstrap.css.map */

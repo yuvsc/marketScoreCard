@@ -14,45 +14,276 @@
   <body>
   
   <div class="container">
-	<h1> Yuval's Calculator </h1>
+	<h1> Balanced Scorecard Calculator </h1>
+	<h5>Created by Noy and Yuval Schaal</h5>
 	<div class="sections">
-		<h2>Financials</h2>
+		<h2>Finance</h2>
 		<div class="row">
 			
 			<div class="col-md-4">
-			   <label class="col-md-6 control-label" for="market_share_s1">Market Share of Primary Segment</label>
+			   <label class="col-md-6 control-label" for="gross_profit">Predicted Gross Profit</label>
 			  	<div class="input-group">
-				  <input name="market_share_s1" class="form-control" type="text">
-				  <span class="input-group-addon">%</span>
+				  <span class="input-group-addon">$</span>				
+				  <input name="gross_profit" class="form-control" type="text">
 				</div>
 			</div>
 			
 			<div class="col-md-4">
-			   <label class="col-md-6 control-label" for="market_share_s1">Market Share of Primary Segment</label>
+			   <label class="col-md-6 control-label" for="total_expenses">Predicted Total Expenses</label>
 			  	<div class="input-group">
-				  <input name="market_share_s1" class="form-control" type="text">
-				  <span class="input-group-addon">%</span>
+				  <span class="input-group-addon">$</span>	
+				  <input name="total_expenses" class="form-control" type="text">
 				</div>
 			</div>
 			
 			<div class="col-md-4">
-			   <label class="col-md-6 control-label" for="market_share_s1">Market Share of Primary Segment</label>
+			   <label class="col-md-6 control-label" for="net_revenues">Predicted Net Revenues</label>
 			  	<div class="input-group">
-				  <input name="market_share_s1" class="form-control" type="text">
-				  <span class="input-group-addon">%</span>
+				  <span class="input-group-addon">$</span>	
+				  <input name="net_revenues" class="form-control" type="text">
 				</div>
 			</div>
+			
+		</div>
+		
+		<div class="row">
+		
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="common_stock">Common Stock</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>				
+				  <input name="common_stock" class="form-control" type="text">
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="total_assets">Total Assets</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="total_assets" class="form-control" type="text">
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="retained_earnings">Retained Earning</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="retained_earnings" class="form-control" type="text">
+				</div>
+			</div>
+			
 		</div>
 		<div class="row">
+		
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="shares_issued">Total Shares Issued</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="shares_issued" class="form-control" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="new_offices">New Offices Cost</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="new_offices" class="form-control" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="depreciation">Depreciation</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="depreciation" class="form-control" type="text">
+				</div>
+			</div>
+			
 		</div>
+		
 		<div class="row">
+		
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="RnD_invesment">R&D Invesment</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="RnD_invesment" class="form-control" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="RnD_licenses">R&D Licenses</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="RnD_licenses" class="form-control" type="text">
+				</div>
+			</div>
+		
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="cum_depreciation">Cumulative Depreciation</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="cum_depreciation" class="form-control" type="text">
+				</div>
+			</div>
+			
 		</div>
+		
+		<div class="row">
+		
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="cum_RnD_invesment">Cumulative R&D Invesment</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="cum_RnD_invesment" class="form-control" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="cum_RnD_licenses">Cumulative R&D Licenses</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="cum_RnD_licenses" class="form-control" type="text">
+				</div>
+			</div>
+
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="cum_new_offices">Cumulative Cost to Open Offices</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="cum_new_offices" class="form-control" type="text">
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="row">
+		
+
+
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="cum_net_revenues">Cumulative Net Revenues</label>
+			  	<div class="input-group">
+				  <span class="input-group-addon">$</span>	
+				  <input name="cum_net_revenues" class="form-control" type="text">
+				</div>
+			</div>
+			
+		</div>
+		
 	</div>
+	
 	<div class="sections">
 		<h2>Marketing</h2>
+		<div class="row">
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="market_share_s1">Market Share of Primary Segment</label>
+			  	<div class="input-group">
+				  <input name="market_share_s1" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="market_share_s2">Market Share of Secondary Segment</label>
+			  	<div class="input-group">
+				  <input name="market_share_s2" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="brand_s1">Brand Judgement of Primary Segment</label>
+			  	<div class="input-group">
+				  <input name="brand_s1" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="judge_s1">Ad Copy Judgement of Primary Segment</label>
+			  	<div class="input-group">
+				  <input name="judge_s1" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="judge_s2">Ad Copy Judgement of Secondary Segment</label>
+			  	<div class="input-group">
+				  <input name="judge_s2" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="brand_s2">Brand Judgement of Secondary Segment</label>
+			  	<div class="input-group">
+				  <input name="brand_s2" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>		
+		</div>
+		
+		
 	</div>
 	<div class="sections">
 		<h2>Manufacturing</h2>
+		
+		<div class="row">
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="net_demand">Predicted Demand</label>
+			  	<div class="input-group">
+				  <input name="net_demand" class="form-control" type="text">
+				  <span class="input-group-addon">#</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="end_inv">Predicted Ending Inventory</label>
+			  	<div class="input-group">
+				  <input name="end_inv" class="form-control" type="text">
+				  <span class="input-group-addon">#</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="stock_outs">Predicted Stock Outs</label>
+			  	<div class="input-group">
+				  <input name="stock_outs" class="form-control" type="text">
+				  <span class="input-group-addon">#</span>
+				</div>
+			</div>		
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="production">Production Units</label>
+			  	<div class="input-group">
+				  <input name="production" class="form-control" type="text">
+				  <span class="input-group-addon">#</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="factory_productivity">Factory Workers Productivity</label>
+			  	<div class="input-group">
+				  <input name="factory_productivity" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>
+			
+			<div class="col-md-4">
+			   <label class="col-md-6 control-label" for="sales_productivity">Sales Force Productivity</label>
+			  	<div class="input-group">
+				  <input name="sales_productivity" class="form-control" type="text">
+				  <span class="input-group-addon">%</span>
+				</div>
+			</div>		
+		</div>
+		
 	</div>
 	
 	<!-- Button -->
@@ -65,134 +296,7 @@
 		
   </div>
   
-<div class="row">
-  
-<div class="col-sm-1">  </div>
-<div class="col-md-8">
 
-<form class="form-horizontal">
-<fieldset>
-
-<!-- Form Name --><!--
-<legend>(Noy and Yuval)'s Awesome Calculator</legend>
-
-
-
-<div class="col-md-6">
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="market_share_s1">Market Share of Primary Segment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input name="market_share_s1" class="form-control" type="text">
-      <span class="input-group-addon">%</span>
-    </div>
-   </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="market_share_s2">Market Share of Secondary Segment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input name="market_share_s2" class="form-control" type="text">
-      <span class="input-group-addon">%</span>
-    </div>
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="judge_s1">Ad Judgement of Primary Segment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input name="judge_s1" class="form-control" type="text">
-      <span class="input-group-addon">%</span>
-    </div>
-    
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="judge_s2">Ad Judgement of Secondary Segment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input name="judge_s2" class="form-control" type="text">
-      <span class="input-group-addon">%</span>
-    </div>
-    
-  </div>
-</div>
-
-
-</div> <!-- end one column---------------------------------------------------------------------- -->
-<!--
-<div class="col-md-6">
-
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="brand_s1">Brand Judgement of Primary Segment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input name="brand_s1" class="form-control" type="text">
-      <span class="input-group-addon">%</span>
-    </div>   
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="brand_s2">Brand Judgement of Secondary Segment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-      <input name="brand_s2" class="form-control" type="text">
-      <span class="input-group-addon">%</span>
-    </div>
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="RnD_invesment">R&D Invesment</label>
-  <div class="col-md-4">
-    <div class="input-group">
-	  <span class="input-group-addon">$</span>
-      <input name="RnD_invesment" class="form-control" type="text">
-    </div>   
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="RnD_licenses">R&D Licenses</label>
-  <div class="col-md-4">
-    <div class="input-group">
-	  <span class="input-group-addon">$</span>
-      <input name="RnD_licenses" class="form-control" type="text">
-    </div>   
-  </div>
-</div>
-
-<div class="form-group">
-  <label class="col-md-6 control-label" for="depreciation">Depreciation</label>
-  <div class="col-md-4">
-    <div class="input-group">
-	  <span class="input-group-addon">$</span>
-      <input name="depreciation" class="form-control" type="text">
-    </div>   
-  </div>
-</div>
-
-
-</div> <!-- end second column -->
-
-<!--</div>
-
-
-</fieldset>
-</form>
-
-
-
-
-</div>
--->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
