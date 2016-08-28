@@ -23,22 +23,19 @@
 			$("#calculator").hide();
 			$(".results").show();
 			$("#again").show();
+			$('html, body').animate({ scrollTop: 0 }, 'fast');
 		});
 		$("#again").click(function(){ 
 			$(".sections").show();
 			$("#calculator").show();
 			$(".results").hide();
 			$("#again").hide();
-			while(table.rows.length > 0) {
-				table.deleteRow(0);
+			while(table.rows.length > 1) {
+				table.deleteRow(table.rows.length-1);
 			}
+			$('html, body').animate({ scrollTop: 0 }, 'fast');
 		});
 	});
-	/*function removeTable(id)
-    {
-        var tbl = document.getElementById(id);
-        if(tbl) tbl.parentNode.removeChild(tbl);
-    }*/
 
 	</script>
 
@@ -64,7 +61,7 @@
 	<div class="form-group" id="again">
 	  <label class="col-md-4 control-label" for="calc"></label>
 	  <div class="col-md-4">
-		<button id="again" name="again" class="btn btn-primary" onclick="removeTable('resultTable')">Try another calculation</button>
+		<button id="again" name="again" class="btn btn-primary">Try another calculation</button>
 	  </div>
 	</div>
 	
