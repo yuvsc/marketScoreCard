@@ -6766,4 +6766,12 @@ button.close {
 #calc{
 	margin-bottom: 16px;
 }
+.results{
+	background-color: white;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
 /*# sourceMappingURL=bootstrap.css.map */

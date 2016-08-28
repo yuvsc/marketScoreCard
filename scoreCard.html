@@ -9,12 +9,59 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
+	
+	<!-- Show and hide different divs -->
+	<script src="scripts/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+	$(document).ready(
+		function(){
+		$(".results").hide();
+		$("#again").hide();
+		$("#calc").click(function(){ //calc / hide
+			$(".sections").hide();
+			$("#calculator").hide();
+			$(".results").show();
+			$("#again").show();
+		});
+		$("#again").click(function(){ 
+			$(".sections").show();
+			$("#calculator").show();
+			$(".results").hide();
+			$("#again").hide();
+		});
+	});
+	/*function removeTable(id)
+    {
+        var tbl = document.getElementById(id);
+        if(tbl) tbl.parentNode.removeChild(tbl);
+    }*/
+
+	</script>
 
   </head>
   <body>
   
   <div class="container">
 	<h1> Yuval's Calculator </h1>
+	<div class="results">
+		<h1>Results</h1>
+		  <table class="table table-striped" id="resultTable" >
+			<tr>
+				<th>Measure</th>
+				<th>Score</th>
+				<th>Explanation</th>
+			</tr>
+		</table>
+	</div>
+	<!-- Button -->
+	<div class="form-group" id="again">
+	  <label class="col-md-4 control-label" for="calc"></label>
+	  <div class="col-md-4">
+		<button id="again" name="again" class="btn btn-primary" onclick="removeTable('resultTable')">Try another calculation</button>
+	  </div>
+	</div>
+	
 	<div class="sections">
 		<h2>Financials</h2>
 		<div class="row">
@@ -56,10 +103,10 @@
 	</div>
 	
 	<!-- Button -->
-	<div class="form-group">
+	<div class="form-group" id="calculator">
 	  <label class="col-md-4 control-label" for="calc"></label>
 	  <div class="col-md-4">
-		<button id="calc" name="calc" class="btn btn-primary">Calculate Scores</button>
+		<button id="calc" name="calc" class="btn btn-primary" onclick="main()">Calculate Scores</button>
 	  </div>
 	</div>
 		
