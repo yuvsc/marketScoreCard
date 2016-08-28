@@ -32,7 +32,7 @@ function main(){
 }
 
 function numberWithCommas(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return Number(x.toString().replace(/,/g , ""));
 }
 
 function displayResults(){
