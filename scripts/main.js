@@ -27,40 +27,7 @@ function main(){
 	total_assets = document.getElementsByName("total_assets")[0].value;
 	end_inv = document.getElementsByName("end_inv")[0].value;
 	production = document.getElementsByName("production")[0].value;
-	op_capacity = 100;
-	debt = 0;
-	/*
-	gross_profit 				= 2
-	total_expenses              = 2
-	new_offices                 = 2
-	RnD_invesment               = 2
-	RnD_licenses                = 2
-	depreciation                = 2
-	shares_issued               = 2
-	market_share_s1             = 2
-	market_share_s2             = 2
-	net_demand                  = 2
-	stock_outs                  = 2
-	brand_s1                    = 2
-	brand_s2                    = 2
-	judge_s1                    = 2
-	judge_s2                    = 2
-	cum_new_offices             = 2
-	cum_RnD_invesment           = 2
-	cum_RnD_licenses            = 2
-	cum_depreciation            = 2
-	cum_net_revenues            = 2
-	retained_earnings           = 2
-	common_stock                = 2
-	sales_productivity          = 2
-	factory_productivity        = 2
-	net_revenues                = 2
-	total_assets                = 2
-	end_inv                     = 2
-	production                  = 2
-	op_capacity                 = 2
-	debt                        = 2
-	*/
+	
 	displayResults();
 }
 
@@ -73,7 +40,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Total Performance";
 	cell2.innerHTML = totalPerf();
-	cell3.innerHTML = "c";
+	cell3.innerHTML = "Total Performance = Financial Performance * Market Performance * Marketing Effectiveness * Investment in Future * Wealth * Human Resource Management * Asset Management";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -81,7 +48,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Financial Performance";
 	cell2.innerHTML = financialPerf();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Financial Performance = ((Gross Profit - Total Expenses) + (Cost to Open New Sales Offices and Web Centers + R&D Investment in New Brand Features and New brands + R&D Licenses + Depreciation))/ Total Shares Issued";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -89,7 +56,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Market Performance";
 	cell2.innerHTML = marketPerf();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Market Performance = ((Market Share in Primary Segment + Market Share in Secondary Segment) / 2) / 100 * ( ( Total Net Demand - Number of Stock-outs ) / Total Net Demand ) * 100) / 100 ";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -97,7 +64,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Marketing Effectiveness";
 	cell2.innerHTML = marketingEff();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Marketing Effectiveness = ( (Highest Brand Judgment in Primary Segment + Highest Brand Judgment in Secondary Segment) / 2)/ 100 + ( Highest Ad Judgment in Primary Segment + Highest Ad Judgment in Secondary Segment ) / 2  / 100 ) / 2 ";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -105,7 +72,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Investment in Future";
 	cell2.innerHTML = investmentFut();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Investment in Future = ( (Cumulative Cost to Open New Sales Offices and Web Centers + Cumulative R&D Investment in New Brand Features and New brands + Cumulative R&D Licenses + Cumulative Depreciation) / Cumulative Net Revenues ) * 10 + 1";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -113,7 +80,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Wealth";
 	cell2.innerHTML = wealth();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Wealth = (Retained Earnings + Common Stock) / Common Stock";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -121,7 +88,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Human Resource Management";
 	cell2.innerHTML = human();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Human Resource Management = ( Sales Force Productivity / 100 + Factory Worker Productivity / 100 ) / 2";
 	
 	var row = table.insertRow();
 	var cell1 = row.insertCell(0);
@@ -129,23 +96,7 @@ function displayResults(){
 	var cell3 = row.insertCell(2);
 	cell1.innerHTML = "Asset Management";
 	cell2.innerHTML = asset();
-	cell3.innerHTML = "g";
-	
-	var row = table.insertRow();
-	var cell1 = row.insertCell(0);
-	var cell2 = row.insertCell(1);
-	var cell3 = row.insertCell(2);
-	cell1.innerHTML = "Manufacturing Productivity";
-	cell2.innerHTML = manufacturing();
-	cell3.innerHTML = "g";
-	
-	var row = table.insertRow();
-	var cell1 = row.insertCell(0);
-	var cell2 = row.insertCell(1);
-	var cell3 = row.insertCell(2);
-	cell1.innerHTML = "Financial Risk";
-	cell2.innerHTML = risk();
-	cell3.innerHTML = "g";
+	cell3.innerHTML = "Asset Management = (Net Revenues / Total Assets) * (1 - Ending Inventory / Production)";
 	
 }
 
@@ -199,20 +150,9 @@ function asset(){
 	return (net_revenues / total_assets) * (1-(end_inv/production));
 }
 	
-function manufacturing(){
-	// Manufacturing Productivity = ( Percent of Operating Capacity Used in Production / 100 ) 
-	return op_capacity/100;
-}
-	
-function risk(){
-	// Financial Risk = ( Total Equity / Total Capital ) ^ 0.5 
-	// Financial Risk = ( (Common Stock + Retained Earnings) / (Common Stock + Retained Earnings + Debt) ) ^ 0.5 
-	return ((common_stock+retained_earnings)/(common_stock+retained_earnings+debt))^0.5;
-}
-	
 function totalPerf(){
 	// Total Performance = Financial Performance * Market Performance * Marketing Effectiveness * 
 	//						Investment in Future * Wealth * Human Resource Management * Asset Management * 
 	//						Manufacturing Productivity * Financial Risk 
-	return financialPerf()*marketPerf()*marketingEff()*investmentFut()*wealth()*human()*asset()*manufacturing()*risk();
+	return financialPerf()*marketPerf()*marketingEff()*investmentFut()*wealth()*human()*asset();
 }
