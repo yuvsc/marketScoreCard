@@ -1,5 +1,5 @@
 function main(){
-    /*gross_profit = document.getElementsByName("gross_profit")[0].value;
+    gross_profit = document.getElementsByName("gross_profit")[0].value;
     total_expenses = document.getElementsByName("total_expenses")[0].value;
 	new_offices = document.getElementsByName("new_offices")[0].value;
 	RnD_invesment = document.getElementsByName("RnD_invesment")[0].value;
@@ -27,9 +27,9 @@ function main(){
 	total_assets = document.getElementsByName("total_assets")[0].value;
 	end_inv = document.getElementsByName("end_inv")[0].value;
 	production = document.getElementsByName("production")[0].value;
-	op_capacity = document.getElementsByName("op_capacity")[0].value;
-	debt = document.getElementsByName("debt")[0].value;
-	*/
+	op_capacity = 100;
+	debt = 0;
+	/*
 	gross_profit 				= 2
 	total_expenses              = 2
 	new_offices                 = 2
@@ -60,7 +60,7 @@ function main(){
 	production                  = 2
 	op_capacity                 = 2
 	debt                        = 2
-	
+	*/
 	displayResults();
 }
 
